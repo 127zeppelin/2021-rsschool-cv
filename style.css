@@ -1,9 +1,31 @@
+html{
+    min-height: 100vh;
+}
 body{
     width: 100%;
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    background: url(oblaka.jpg) no-repeat bottom;
+    background-size: contain;
 }
 h1{
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+}
+a:link,a:visited,a:hover,a:active{
+    text-decoration: none;
+    color: #39A9C5;
+}
+ul,ol{
+    padding-left: 20px;
+}
+main{
+    width:1170px;
+    max-width: 100%;
+    margin:0 auto;
 }
 .container{
     display: flex;
@@ -11,24 +33,49 @@ h1{
 }
 .container div{
     align-self: center;
-}
-.ava-ou{
     padding:20px;
 }
+.container ul{
+    list-style-type: none;
+    padding-left: 0px;
+    color: #39A9C5;
+}
 img.ava{
-    max-width: 200px;
     border-radius: 50%;
 }
-main{
-    width:1170px;
-    max-width: 100%;
-    margin:0 auto;
+.cont:before{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.location:before{ 
+    content: "";
+    background: url(pin.png) no-repeat;
+    background-size: cover;
+}
+.email:before{ 
+    content: "";
+    background: url(open-mail.png) no-repeat;
+    background-size: cover;
+}
+.discord:before{ 
+    content: "";
+    background: url(discord.png) no-repeat;
+    background-size: cover;
+}
+.container-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container-2 div{
+    padding: 20px;
 }
 footer{
     position: -webkit-sticky;
-    position: sticky;
+    position: relative;
     bottom: 0px;
     padding:20px;
-    background-color: #888;
     text-align: center;
 }
